@@ -6,12 +6,12 @@ const Header = () => {
     return (
         <Navbar bg='light' variant='light' expand="lg">
             <Container>
-                <Navbar.Brand href='/'>
+                <Navbar.Brand as={Link} to='/'>
                     Quiz Master
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className='me-auto'>
+                    <Nav className='ms-auto'>
                         <Nav.Link as={Link} to='/'>Home</Nav.Link>
                         <Nav.Link as={Link} to='/statistics'>Statistics</Nav.Link>
                         <Nav.Link as={Link} to='/blogs'>Blogs</Nav.Link>
