@@ -5,10 +5,6 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 const Statistics = () => {
     const topics = useLoaderData();
     const data = topics.data;
-
-
-
-    console.log(data);
     return (
         <section className='container'>
             <div>
