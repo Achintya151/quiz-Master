@@ -6,8 +6,16 @@ import { Button } from 'react-bootstrap';
 import Toast from 'react-bootstrap/Toast';
 
 const Question = ({ question }) => {
-    console.log(question);
+
     const [show, setShow] = useState(false);
+    const correctAnswer = question.correctAnswer;
+    const handleAnswer = answer => {
+        if (answer === correctAnswer) {
+            alert('Yay!! Correct Answer')
+        } else {
+            alert('wrong answer try again')
+        }
+    }
     return (
         <div className='container'>
             <div className='shadow bg-body rounded my-5 p-5'>
@@ -40,6 +48,7 @@ const Question = ({ question }) => {
                         question.options.map((option, index) => <Options
                             key={index}
                             options={option}
+                            handleAnswer={handleAnswer}
                         ></Options>)
                     }
                 </div>
