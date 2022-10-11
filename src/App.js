@@ -6,6 +6,7 @@ import Statistics from './components/Statistics/Statistics';
 import Main from './layouts/Main/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Quiz from './components/Quiz/Quiz';
+import Error from './layouts/Error/Error';
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
           element: <Blogs></Blogs>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <Error></Error>
     }
   ])
   return (
