@@ -7,7 +7,7 @@ const Home = () => {
     const topics = useLoaderData();
     return (
         <div>
-            <div className='d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-md-around my-5 align-items-md-center'>
+            <div className='d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-md-around my-5 align-items-md-center text-success'>
                 <img className='w-25 mb-3' src={banner} alt="banner" />
                 <div className='w-50'>
                     <h1>Welcome To Quiz Master</h1>
