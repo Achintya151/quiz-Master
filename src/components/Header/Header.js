@@ -12,9 +12,9 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
 
-                    <Nav className='ms-auto' fill variant="tabs" defaultActiveKey="/home">
+                    <Nav className='ms-auto' fill variant="tabs" defaultActiveKey="/">
                         <Nav.Item>
-                            <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
+                            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link as={NavLink} to='/statistics'>Statistics</Nav.Link>
